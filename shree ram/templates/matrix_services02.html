@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #F4F4F4;
+        /* background-size: 100% 100%; */
+        height: 1000px;
+    }
+
+    .header {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        height: 1000px;
+        width: 500px;
+        background-color: #D4EFC8;
+        border-radius: 30px;
+    }
+
+    #header1 {
+        position: absolute;
+        top: 45px;
+        left: 90px;
+        font-size: 40px;
+    }
+
+    #header2 {
+        position: absolute;
+        top: 115px;
+        left: 20px;
+        font-size: 20px;
+    }
+
+    #header3 img {
+        position: absolute;
+        top: 170px;
+        left: -25px;
+
+    }
+
+    #header4 {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #header5 {
+        position: absolute;
+        top: 330px;
+        left: 200px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    /* #main01 {
+        position: absolute;
+        top: 25px;
+        left: 600px;
+        font-size: 30px;
+    } */
+
+    #att1 {
+        position: absolute;
+        top: 15px;
+        left: 570px;
+        font-size: 30px;
+    }
+
+    #att2 {
+        position: absolute;
+        top: 15px;
+        left: 970px;
+        font-size: 30px;
+    }
+
+    #att3 {
+        position: absolute;
+        top: 125px;
+        left: 570px;
+        font-size: 30px;
+    }
+
+    #att4 {
+        position: absolute;
+        top: 125px;
+        left: 970px;
+        font-size: 30px;
+    }
+
+    #att5 {
+        position: absolute;
+        top: 235px;
+        left: 570px;
+        font-size: 30px;
+    }
+
+    #att6 {
+        position: absolute;
+        top: 345px;
+        left: 570px;
+        font-size: 30px;
+    }
+
+    #att7 {
+        position: absolute;
+        top: 455px;
+        left: 570px;
+        font-size: 30px;
+    }
+
+    #att8 {
+        position: absolute;
+        top: 455px;
+        left: 570px;
+        font-size: 30px;
+    }
+
+    #main01 input {
+        padding: 10px 10px;
+    }
+
+    #Age {
+        position: absolute;
+        top: 60px;
+        left: 570px;
+        width: 300px;
+    }
+
+    #Gender {
+        position: absolute;
+        top: 60px;
+        left: 970px;
+        width: 300px;
+    }
+
+    #Stream {
+        position: absolute;
+        top: 170px;
+        left: 570px;
+        width: 300px;
+    }
+
+    #Internships {
+        position: absolute;
+        top: 170px;
+        left: 970px;
+        width: 300px;
+    }
+
+    #CGPA {
+        position: absolute;
+        top: 280px;
+        left: 570px;
+        width: 700px;
+    }
+
+    #Back_Logs {
+        position: absolute;
+        top: 390px;
+        left: 570px;
+        width: 700px;
+    }
+
+    #Hostel {
+        position: absolute;
+        top: 500px;
+        left: 570px;
+        width: 300px;
+    }
+
+    #sub {
+        position: absolute;
+        top: 620px;
+        left: 850px;
+        border-radius: 30px;
+        background-color: #EB843A;
+        color: black;
+        padding: 20px 20px;
+        width: 130px;
+        height: 70px;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header">
+            <div id="header1"><strong>Placement Analyser</strong></div>
+            <div id="header2">Find out the chances of you getting Placed in Companies</div>
+            <div id="header3"><img src="static/matrix 5.png" alt="Error 404" height="550px"></div>
+            <div id="header4"></div>
+            <div id="header5"></div>
+        </div>
+    </header>
+    <main>
+        <div id="main01">
+            <form method="POST" , action="{{url_for('after')}}">
+                <b> <label for="Age" id="att1">Age : </label><input type="text" name="Age" id="Age"> <br><br>
+                    <label for="Gender" id="att2">Gender : </label><input type="text" name="Gender" id="Gender">
+                    <br><br>
+                    <label for="Stream" id="att3">Stream : </label><input type="text" name="Stream" id="Stream">
+                    <br><br>
+                    <label for="Internships" id="att4">Internships : </label><input type="text" name="Internships"
+                        id="Internships"> <br><br>
+                    <label for="CGPA" id="att5">CGPA : </label><input type="text" name="CGPA" id="CGPA">
+                    <label for="Back Logs" id="att6">History Of Back Logs </label><input type="text" name="Back Logs"
+                        id="Back_Logs">
+                    <!-- Seventh Value : <input type="text" name="Attendence" id="Attendence"> -->
+                    <label for="Hostel" id="att8">Hostel : </label><input type="text" name="Hostel" id="Hostel"><br></b>
+                <input type="submit" id="sub" , value='Predict!'>
+                <div>
+    </main>
+</body>
+
+</html>

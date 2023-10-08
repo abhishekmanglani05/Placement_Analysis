@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #F4F4F4;
+        /* background-size: 100% 100%; */
+        height: 1000px;
+    }
+
+    .header {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        height: 1000px;
+        width: 500px;
+        background-color: #D4EFC8;
+        border-radius: 30px;
+    }
+
+    #header1 {
+        position: absolute;
+        top: 45px;
+        left: 90px;
+        font-size: 40px;
+    }
+
+    #header2 {
+        position: absolute;
+        top: 115px;
+        left: 20px;
+        font-size: 20px;
+    }
+
+    #header3 img {
+        position: absolute;
+        top: 170px;
+        left: -25px;
+
+    }
+
+    #header4 {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #header5 {
+        position: absolute;
+        top: 330px;
+        left: 200px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    /* #main01 {
+        position: absolute;
+        top: 15px;
+        left: 570px;
+    } */
+
+    #att1 {
+        position: absolute;
+        top: 15px;
+        left: 570px;
+    }
+
+    #main01 form label {
+        font-size: 30px;
+    }
+
+    #main01a {
+        position: absolute;
+        top: 60px;
+        left: 570px;
+    }
+
+    #main01a input {
+        width: 300px;
+        padding: 10px 10px;
+    }
+
+    #att2 {
+        position: absolute;
+        top: 15px;
+        left: 970px;
+    }
+
+    #main02 form label {
+        font-size: 30px;
+    }
+
+    #main02a {
+        position: absolute;
+        top: 60px;
+        left: 970px;
+    }
+
+    #main02a input {
+        width: 300px;
+        padding: 10px 10px;
+    }
+
+    #att3 {
+        position: absolute;
+        top: 125px;
+        left: 570px;
+    }
+
+    #main03 form label {
+        font-size: 30px;
+    }
+
+    #main03a {
+        position: absolute;
+        top: 170px;
+        left: 570px;
+    }
+
+    #main03a input {
+        width: 300px;
+        padding: 10px 10px;
+    }
+
+    #att4 {
+        position: absolute;
+        top: 125px;
+        left: 970px;
+    }
+
+    #main04 form label {
+        font-size: 30px;
+    }
+
+    #main04a {
+        position: absolute;
+        top: 170px;
+        left: 970px;
+    }
+
+    #main04a input {
+        width: 300px;
+        padding: 10px 10px;
+    }
+
+    #att5 {
+        position: absolute;
+        top: 235px;
+        left: 570px;
+    }
+
+    #main05 form label {
+        font-size: 30px;
+    }
+
+    #main05a {
+        position: absolute;
+        top: 280px;
+        left: 570px;
+    }
+
+    #main05a input {
+        width: 700px;
+        padding: 10px 10px;
+    }
+
+    #att6 {
+        position: absolute;
+        top: 345px;
+        left: 570px;
+    }
+
+    #main06 form label {
+        font-size: 30px;
+    }
+
+    #main06a {
+        position: absolute;
+        top: 390px;
+        left: 570px;
+    }
+
+    #main06a input {
+        width: 700px;
+        padding: 10px 10px;
+    }
+
+    #att7 {
+        position: absolute;
+        top: 455px;
+        left: 570px;
+    }
+
+    #main07 form label {
+        font-size: 30px;
+    }
+
+    #main07a {
+        position: absolute;
+        top: 500px;
+        left: 570px;
+    }
+
+    #main07a input {
+        width: 300px;
+        padding: 10px 10px;
+    }
+
+    #att8 {
+        position: absolute;
+        top: 455px;
+        left: 970px;
+    }
+
+    #main08 form label {
+        font-size: 30px;
+    }
+
+    #main08a {
+        position: absolute;
+        top: 500px;
+        left: 970px;
+    }
+
+    #main08a input {
+        width: 300px;
+        padding: 10px 10px;
+    }
+
+    #main09 {
+        position: absolute;
+        top: 620px;
+        left: 850px;
+        border-radius: 30px;
+        background-color: #EB843A;
+        color: #F4F4F4;
+        padding: 20px 20px;
+        font-size: 25px;
+    }
+
+    #GVButton {
+        border: none;
+        font-size: 20px;
+        text-decoration: none;
+        background-color: #EB843A;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header">
+            <div id="header1"><strong>Placement Analyser</strong></div>
+            <div id="header2">Find out the chances of you getting Placed in Companies</div>
+            <div id="header3"><img src="static/matrix 5.png" alt="Error 404" height="550px"></div>
+            <div id="header4"></div>
+            <div id="header5"></div>
+        </div>
+    </header>
+    <main>
+        <div id="main01">
+            <form method="post" ,action="{{url_for('after')}}">
+                <label for="Age" id="att1">Age</label>
+                <div id="main01a">
+                    <input type="text" name="Age" id="Age">
+                </div>
+
+                <label for="Gender" id="att2">Gender</label>
+                <div id="main02a">
+                    <input type="text" name="Gender" id="Gender">
+                </div>
+
+                <label for="Stream" id="att3">Stream</label>
+                <div id="main03a">
+                    <input type="text" name="Stream" id="Stream">
+                </div>
+
+                <label for="Internships" id="att4">Internships</label>
+                <div id="main04a">
+                    <input type="text" name="Internships" id="Internships">
+                </div>
+
+                <label for="CGPA" id="att5">CGPA</label>
+                <div id="main05a">
+                    <input type="text" name="CGPA" id="CGPA">
+                </div>
+
+                <label for="Back Logs" id="att6">History Of Back Logs</label>
+                <div id="main06a">
+                    <input type="text" name="Back Logs" id="Back Logs">
+                </div>
+
+                <label for="Attendence" id="att7">Attendence</label>
+                <div id="main07a">
+                    <input type="text" name="Attendence" id="Attendence">
+                </div>
+
+                <label for="Hostel" id="att8">Hostel</label>
+                <div id="main08a">
+                    <input type="text" name="Hostel" id="Hostel">
+                </div>
+                <div id="main09">
+                    <button type="submit" id="GVButton">Start Analyzing</button>
+                </div>
+                <!-- <div id=" main09">
+                        <input type="submit" id="GVButton" value="after">
+                </div> -->
+            </form>
+
+            <!-- <div id="main09">
+                <button id="GVButton" onclick="output()">Start Analyzing</button>
+            </div> -->
+        </div>
+    </main>
+    <footer></footer>
+
+    <!-- <script>
+        function output() {
+            let para1 = document.getElementById('header3');
+            para1.style.display = 'none';
+
+            document.getElementById("header4").textContent = 'Percentage of you getting Placed is as follows:';
+            document.getElementById("header5").textContent = '81%';
+        }
+    </script> -->
+
+</body>
+
+</html>
